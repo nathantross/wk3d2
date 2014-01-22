@@ -4,17 +4,12 @@ BogApp::Application.routes.draw do
     # just to be RESTful
     get '/creatures', to: 'creatures#index'
 
-    # it's a `get` because 
-    #   someone is requesting
-    #   a page with a form
     get '/creatures/new', to: 'creatures#new'
 
-    ## My new show method
     get '/creatures/:id', to: 'creatures#show'
 
-    post "/creatures", to: "creatures#create"
+    get '/creatures/:id/edit', to: "creatures#edit"
 
-    # handle the submitted form
     post '/creatures', to: 'creatures#create'
 
 
