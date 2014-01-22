@@ -1,1 +1,11 @@
-Hello, pilots!
+<h1>Result Page</h1>
+
+
+<% @creatures.each do |creature| %>
+
+    <div>
+        Name: <%= creature[:name] %> <br>
+        Description: <%= creature[:description] %>
+    </div>
+
+<% end %>

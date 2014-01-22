@@ -9,6 +9,9 @@ BogApp::Application.routes.draw do
     #   a page with a form
     get '/creatures/new', to: 'creatures#new'
 
+    ## My new show method
+    get '/creatures/:id', to: 'creatures#show'
+
     post "/creatures", to: "creatures#create"
 
     # handle the submitted form
@@ -16,3 +19,5 @@ BogApp::Application.routes.draw do
 
 
 end
+
+

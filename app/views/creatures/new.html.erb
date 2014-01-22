@@ -1,6 +1,8 @@
+<h1>Create a new Creature</h1>
+
 <form action="/creatures" method="post">
     <input type="text" name="creature[name]">
     <textarea name="creature[description]"></textarea>
-
+    <%= token_tag form_authenticity_token %>
     <button>Create Creature</button>
 </form>
